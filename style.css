@@ -1,0 +1,649 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+    line-height: 1.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.second-ul{
+    display: none;
+}
+header{
+    display: flex;
+}
+header img{
+    width: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.sec-1{
+    background: url(pexels-photo-169573.jpeg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec-1 h1{
+    font-size: 2rem;
+    color: white;
+    line-height: 0px;
+    padding: 0px 20px;
+}
+.sec-1 .content p{
+    padding: 5px 40px;
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+}
+.sec-2 p{
+    padding: 0px 40px;
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.container img {
+    width: 90px;   
+}
+.container div{
+    margin-top: -15px;
+}
+.container p{
+    text-align: center;
+    padding: -20px 60px;
+    line-height: 1;
+    margin-top: 5px;
+    padding: 0px 30px;
+}
+.sec-3 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #111;
+
+}
+.sec-3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1;
+    padding-top: -10px;
+}
+.sec-3 .course img{
+    padding-top: 60px;
+    width: 200px;
+    height: 150px;
+}
+.sec-3 button{
+    padding: 10px 20px;
+    margin-bottom: 80px;
+    background-color: rgb(232, 33, 33);
+    color: white;
+    border: none;
+    
+}
+.sec-3{
+    margin-bottom: 180px;
+}
+.sec-3 button a{
+    color: white;
+    text-decoration: none;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        header img{
+            width: 20px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+            padding-top: 20px;
+        }
+        .second-ul{
+            display: none;
+        }
+        .sec-1{
+            margin-top: 55px;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 14px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 13px;
+            left: 259px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 15px;
+            left: 259px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 12px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -6.8em;
+            left: 20px;
+            z-index: 2;
+            padding: 0px 2px;
+        }   
+        .sec-3{
+            margin-bottom: 0px;
+        }
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+        header img{
+            width: 20px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+            padding-top: 20px;
+        }
+        .second-ul{
+            display: none;
+        }
+        .sec-1{
+            margin-top: 55px;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 14px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 13px;
+            left: 259px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 15px;
+            left: 259px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 12px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -6.8em;
+            left: 20px;
+            z-index: 2;
+            padding: 0px 2px;
+        }   
+        .sec-3{
+            margin-bottom: 0px;
+        }
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+        header img{
+            width: 20px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+            padding-top: 20px;
+        }
+        .second-ul{
+            display: none;
+        }
+        .sec-1{
+            margin-top: 55px;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 14px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 13px;
+            left: 259px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 15px;
+            left: 259px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 12px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -6.8em;
+            left: 20px;
+            z-index: 2;
+            padding: 0px 2px;
+        }   
+        .sec-3{
+            margin-bottom: 0px;
+        }
+    }
+    @media only screen and (min-device-width : 520px) and (max-device-width : 978px) {
+        header img{
+            width: 70px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            padding-top: 45px;
+            display: block;
+        }
+        .sec-1{
+            margin-top: 40px;
+        }
+        .sec-1 h1{
+            font-size: 2.5rem;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 16px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 30x;
+            left: 550px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 30px;
+            left: 549px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -3.8em;
+            left: 148px;
+            z-index: 2;
+            padding: 0px 7px;
+        }  
+        .container input{
+            margin-bottom: 20px;
+        }
+        section, input{
+            padding: 10px 40px;
+        }
+        section input:hover{
+            background-color: whitesmoke;
+            border: none;
+        }
+        .main-9 #change{
+            text-align: center;
+            background-color: firebrick;
+            color: white;
+            border: none;
+        }
+        .lesson{
+            margin-bottom: 0px;
+        }
+    }
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            header img{
+                width: 70px;
+                padding-left: 50px;
+                padding-bottom: 0px;
+                padding-top: 45px;
+                display: block;
+            }
+            .second-ul{
+                display: none;
+            }
+            .sec-1{
+                margin-top: 40px;
+            }
+            .sec-1 h1{
+                font-size: 2.5rem;
+            }
+            .sec-1 p{
+                font-size: 0px;
+            }
+            .container div p, .sec-3 p{
+                font-size: 16px;
+            }
+            .menu-wrap .toggler{
+                position: relative;
+                top: 30x;
+                left: 659px;
+                z-index: 2;
+                width: 40px;
+                height: 30px;
+                opacity: 0;
+            }
+            .menu-wrap .hambuger{
+                position: absolute;
+                top: 30px;
+                left: 659px;
+                z-index: 1;
+                padding: 1rem;
+                background-color:black;
+                height: 5px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+            .menu-wrap .menu ul li{
+                font-size: 18px;
+                display: inline-block;
+                padding: 15px;
+                text-decoration: none;
+                list-style: none;
+                position: relative;
+                top: -3.8em;
+                left: 100px;
+                z-index: 2;
+                padding: 0px 30px;
+            }   
+            .sec-3{
+                margin-bottom: 0px;
+            }
+        }
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        header img{
+            width: 70px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            padding-top: 45px;
+            display: block;
+        }
+        .second-ul{
+            display: none;
+        }
+        .sec-1{
+            margin-top: 40px;
+        }
+        .sec-1 h1{
+            font-size: 2.5rem;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 16px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 30x;
+            left: 659px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 30px;
+            left: 659px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -3.8em;
+            left: 100px;
+            z-index: 2;
+            padding: 0px 30px;
+        }   
+        .sec-3{
+            margin-bottom: 0px;
+        }
+    }
+    
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+            header img{
+                width: 70px;
+                padding-left: 50px;
+                padding-bottom: 0px;
+                padding-top: 45px;
+                display: block;
+            }
+            .second-ul{
+                display: none;
+            }
+            .sec-1{
+                margin-top: 40px;
+            }
+            .sec-1 h1{
+                font-size: 2.5rem;
+            }
+            .sec-1 p{
+                font-size: 0px;
+            }
+            .container div p, .sec-3 p{
+                font-size: 16px;
+            }
+            .menu-wrap .toggler{
+                position: relative;
+                top: 30x;
+                left: 659px;
+                z-index: 2;
+                width: 40px;
+                height: 30px;
+                opacity: 0;
+            }
+            .menu-wrap .hambuger{
+                position: absolute;
+                top: 30px;
+                left: 659px;
+                z-index: 1;
+                padding: 1rem;
+                background-color:black;
+                height: 5px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+            .menu-wrap .menu ul li{
+                font-size: 18px;
+                display: inline-block;
+                padding: 15px;
+                text-decoration: none;
+                list-style: none;
+                position: relative;
+                top: -3.8em;
+                left: 100px;
+                z-index: 2;
+                padding: 0px 30px;
+            }   
+            .sec-3{
+                margin-bottom: 0px;
+            }
+        }
+        
+    }
+    /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    
+    }
+         
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+            
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1224px) {
+        .menu-wrap .toggler{
+            display: none;
+        }
+        .menu-wrap .hambuger{
+            display: none;
+            
+        }
+        .menu-wrap .menu ul li {
+            display: none;
+        }  
+        
+        header img{
+            width: 50px;
+            padding-top: 80px;
+            padding-left: 80px;
+        } 
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .second-ul {
+            display: inline-block;
+            padding-top: 70px;
+        }
+        .second-ul ul li{
+            display: inline;
+            margin-right: 60px;
+        }
+        .second-ul ul li a{
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            list-style: none;
+        }
+        .second-ul li li a:{
+            opacity: 0.8;
+        }
+        .second-ul .current a{
+            border: 1px solid black;
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+        }
+        .sec-1 h1{
+            font-size: 50px;
+        }
+        .container div p{
+            font-size: 16px;
+        }
+        .sec-1{
+            margin-bottom: 50px;
+        }
+    }
+
+
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+    }
+    
+    /* iPhone 4 ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+    }
+    
+    /* iPhone 5 ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    }
+    
+    /* iPhone 6, 7, 8 ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    
+    }
+    
+    
+

@@ -1,0 +1,100 @@
+.menu-wrap{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-top: 20px;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    z-index: 2;
+    width: 40%;
+    height: 20%;
+    opacity: 0;
+}
+.menu-wrap .hambuger{
+    position: absolute;
+    top: 0px;
+    left:330px;
+    z-index: 1;
+    padding: 1rem;
+    background-color:black;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+/*The hambuger line */
+.menu-wrap .hambuger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+}
+.menu-wrap .hambuger > div:before,
+.menu-wrap .hambuger > div:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 1;
+    height: 2px;
+    background-color: white;
+}
+.menu-wrap .hambuger > div:after{
+    top: 10px;
+}
+/* Toggler animate*/
+.menu-wrap .toggler:checked + .hambuger > div{
+    transform: rotate(135deg);
+}
+/* Turns line in X*/
+.menu-wrap .toggler:checked + .hambuger > div:before,
+.menu-wrap .toggler:checked + .hambuger>div:after {
+    top:0;
+    transform: rotate(90deg);
+}
+.menu-wrap .menu{
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    visibility: hidden;
+    margin-top: 60px;
+}
+.menu-wrap .menu ul li{
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    top: -2.7em;
+    left: 40px;
+    z-index: 2;
+}
+.menu-wrap .menu div ul  li  a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease-out;
+    overflow: visible;
+    cursor: pointer;
+
+}
+.menu-wrap .menu div ul li a:hover{
+    opacity: 0.3;
+}
+/*  show menu*/
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}

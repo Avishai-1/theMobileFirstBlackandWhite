@@ -1,0 +1,975 @@
+body{
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+header img{
+    width: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.second-ul{
+    display: none;
+}
+.menu-wrap{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    margin-top: 20px;
+}
+.menu-wrap .toggler{
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    z-index: 2;
+    width: 40%;
+    height: 20%;
+    opacity: 0;
+}
+.menu-wrap .hambuger{
+    position: absolute;
+    top: 0px;
+    left:330px;
+    z-index: 1;
+    padding: 1rem;
+    background-color:black;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+/*The hambuger line */
+.menu-wrap .hambuger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+}
+.menu-wrap .hambuger > div:before,
+.menu-wrap .hambuger > div:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: 1;
+    height: 2px;
+    background-color: white;
+}
+.menu-wrap .hambuger > div:after{
+    top: 10px;
+}
+/* Toggler animate*/
+.menu-wrap .toggler:checked + .hambuger > div{
+    transform: rotate(135deg);
+}
+/* Turns line in X*/
+.menu-wrap .toggler:checked + .hambuger > div:before,
+.menu-wrap .toggler:checked + .hambuger>div:after {
+    top:0;
+    transform: rotate(90deg);
+}
+.menu-wrap .menu{
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    visibility: hidden;
+    margin-top: 60px;
+}
+.menu-wrap .menu ul li{
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    top: -2.7em;
+    left: 40px;
+    z-index: 2;
+}
+.menu-wrap .menu div ul  li  a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease-out;
+    overflow: visible;
+    cursor: pointer;
+
+}
+.menu-wrap .menu div ul li a:hover{
+    opacity: 0.3;
+}
+/*  show menu*/
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+
+section .wrapper-1{
+    background-color: black;
+    width: 100%;
+    padding-top: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-1 h1{
+    text-align: center;
+}
+.wrapper-1 img{
+    padding-top: 50px;
+}
+.move-2{
+    margin-top: 150px;
+}
+
+.sub-9{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sub-9{
+    margin-top: 10px;
+}
+.sub-9 .btn-divide{
+    padding-top: 10px 100px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+footer .lesson{
+    padding-top: 50px;
+}
+footer .lesson p{
+    text-align: center;
+}
+section, input{
+    padding: 10px 20px;
+}
+section input:hover{
+    background-color: whitesmoke;
+    border: none;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid div p{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px 10px;
+}
+.grid div .none{
+    border: none;
+}
+.main-1 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.main-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-2 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.min-btn div input{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.main-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-3 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.grid .no-wrap{
+    display: flex;
+    flex-direction: row;
+}
+.main-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-4 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.main-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-5 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.main-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-7 img{
+    width: 150px;
+    padding-top: 10px;
+}
+.main-9 img{
+    width: 150px;
+    padding-top: 20px;
+}
+.main-9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-9 #change{
+    text-align: center;
+    background-color: firebrick;
+    color: white;
+    border: none;
+}
+.lesson-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 180px;
+}
+.lesson-1 a{
+    padding: 20px;
+    color: black;
+    line-height: 1;
+}
+.lesson-1 div{
+    margin-top: 20px;
+}
+.lesson-1 p{
+    margin-top: 1px;
+    padding: 0px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    }
+    .main-1, .main-2, .main-3, .main-4, .main-5, .main-6, .main-7, .main-8, .main-9{
+        font-size: 14px;
+    }
+    .wrapper-1{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    header img{
+        width: 20px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    .sec-1{
+        margin-top: 55px;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 12px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 13px;
+        left: 259px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 15px;
+        left: 259px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 12px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -6.8em;
+        left: 20px;
+        z-index: 2;
+        padding: 0px 2px;
+    }  
+    .lesson-1{
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (min-width : 321px) {
+    header img{
+        width: 20px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    .sec-1{
+        margin-top: 55px;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 14px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 13px;
+        left: 259px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 15px;
+        left: 259px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 12px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -6.8em;
+        left: 20px;
+        z-index: 2;
+        padding: 0px 2px;
+    }   
+    .sec-3{
+        margin-bottom: 0px;
+    }
+}
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+    }
+    .main-1, .main-2, .main-3, .main-4, .main-5, .main-6, .main-7, .main-8, .main-9{
+        font-size: 14px;
+    }
+    .wrapper-1{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    header img{
+        width: 20px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    .sec-1{
+        margin-top: 55px;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 12px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 13px;
+        left: 259px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 15px;
+        left: 259px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 12px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -6.8em;
+        left: 20px;
+        z-index: 2;
+        padding: 0px 2px;
+    }  
+    .lesson-1{
+        margin-bottom: 0px;
+    }
+    @media only screen and (min-device-width : 520px) and (max-device-width : 978px) {
+        header img{
+            width: 70px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            padding-top: 45px;
+            display: block;
+        }
+        .sec-1{
+            margin-top: 40px;
+        }
+        .sec-1 h1{
+            font-size: 2.5rem;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 16px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 30x;
+            left: 450px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 30px;
+            left: 450px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -3.8em;
+            left: 100px;
+            z-index: 2;
+            padding: 0px 7px;
+        }  
+        .container input{
+            margin-bottom: 20px;
+        }
+        section, input{
+            padding: 10px 40px;
+        }
+        section input:hover{
+            background-color: whitesmoke;
+            border: none;
+        }
+        .main-9 #change{
+            text-align: center;
+            background-color: firebrick;
+            color: white;
+            border: none;
+        }
+        .lesson{
+            margin-bottom: 0px;
+        }
+    }
+
+@media only screen and (min-device-width : 520px) and (max-device-width : 978px) {
+    header img{
+        width: 70px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 45px;
+        display: block;
+    }
+    .sec-1{
+        margin-top: 40px;
+    }
+    .sec-1 h1{
+        font-size: 2.5rem;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 16px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 30x;
+        left: 530px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 30px;
+        left: 530px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -3.8em;
+        left: 120px;
+        z-index: 2;
+        padding: 0px 7px;
+    }  
+    .container input{
+        margin-bottom: 20px;
+    }
+    section, input{
+        padding: 10px 40px;
+    }
+    section input:hover{
+        background-color: whitesmoke;
+        border: none;
+    }
+    .main-9 #change{
+        text-align: center;
+        background-color: firebrick;
+        color: white;
+        border: none;
+    }
+    .lesson{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        header img{
+            width: 70px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            padding-top: 45px;
+            display: block;
+        }
+        .sec-1{
+            margin-top: 40px;
+        }
+        .sec-1 h1{
+            font-size: 2.5rem;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 16px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 30x;
+            left: 659px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 30px;
+            left: 659px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -3.8em;
+            left: 100px;
+            z-index: 2;
+            padding: 0px 30px;
+        }  
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    header img{
+        width: 70px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 45px;
+        display: block;
+    }
+    .sec-1{
+        margin-top: 40px;
+    }
+    .sec-1 h1{
+        font-size: 2.5rem;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 16px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 30x;
+        left: 659px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 30px;
+        left: 659px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -3.8em;
+        left: 100px;
+        z-index: 2;
+        padding: 0px 30px;
+    }  
+   
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    header img{
+        width: 70px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 45px;
+        display: block;
+    }
+    .sec-1{
+        margin-top: 40px;
+    }
+    .sec-1 h1{
+        font-size: 2.5rem;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 16px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 30x;
+        left: 659px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 30px;
+        left: 659px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -3.8em;
+        left: 100px;
+        z-index: 2;
+        padding: 0px 30px;
+    }   
+    .sec-3{
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+    header img{
+        width: 70px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 45px;
+        display: block;
+    }
+    .sec-1{
+        margin-top: 40px;
+    }
+    .sec-1 h1{
+        font-size: 2.5rem;
+    }
+    .sec-1 p{
+        font-size: 0px;
+    }
+    .container div p, .sec-3 p{
+        font-size: 16px;
+    }
+    .menu-wrap .toggler{
+        position: relative;
+        top: 30x;
+        left: 659px;
+        z-index: 2;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+    }
+    .menu-wrap .hambuger{
+        position: absolute;
+        top: 30px;
+        left: 659px;
+        z-index: 1;
+        padding: 1rem;
+        background-color:black;
+        height: 5px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .menu-wrap .menu ul li{
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        list-style: none;
+        position: relative;
+        top: -3.8em;
+        left: 100px;
+        z-index: 2;
+        padding: 0px 30px;
+    }   
+    .sec-3{
+        margin-bottom: 0px;
+    }
+}
+ /**********
+    iPad 3
+    **********/
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+        header img{
+            width: 70px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            padding-top: 45px;
+            display: block;
+        }
+        .sec-1{
+            margin-top: 40px;
+        }
+        .sec-1 h1{
+            font-size: 2.5rem;
+        }
+        .sec-1 p{
+            font-size: 0px;
+        }
+        .container div p, .sec-3 p{
+            font-size: 16px;
+        }
+        .menu-wrap .toggler{
+            position: relative;
+            top: 30x;
+            left: 659px;
+            z-index: 2;
+            width: 40px;
+            height: 30px;
+            opacity: 0;
+        }
+        .menu-wrap .hambuger{
+            position: absolute;
+            top: 30px;
+            left: 659px;
+            z-index: 1;
+            padding: 1rem;
+            background-color:black;
+            height: 5px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .menu-wrap .menu ul li{
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px;
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            top: -3.8em;
+            left: 100px;
+            z-index: 2;
+            padding: 0px 30px;
+        }   
+        .sec-3{
+            margin-bottom: 0px;
+        }
+}
+@media only screen  and (min-width : 1224px) {
+    .menu-wrap .toggler{
+        display: none;
+    }
+    .menu-wrap .hambuger{
+        display: none;
+        
+    }
+    .menu-wrap .menu ul li {
+        display: none;
+    }     
+    header img{
+        width: 50px;
+        padding-top: 80px;
+        padding-left: 80px;
+    } 
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        float: right;
+    }
+    .second-ul {
+        display: inline-block;
+        padding-top: 70px;
+    }
+    .second-ul ul li{
+        display: inline;
+        margin-right: 60px;
+    }
+    .second-ul ul li a{
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .move-2{
+        padding-top: 60px;
+    }
+    .second-ul li li a:{
+        opacity: 0.8;
+    }
+    .second-ul .current a{
+        border: 1px solid black;
+        padding: 5px 15px;
+        background-color: black;
+        color: white;
+    }
+    .sec-1 h1{
+        font-size: 50px;
+    }
+    .container div p{
+        font-size: 20px;
+    }
+    section .wrapper-1{
+        background-color: black;
+        width: 100%;
+        height: 400px;
+        padding-top: 0px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
